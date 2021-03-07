@@ -15,9 +15,9 @@ class Richtungsanzeiger extends StatelessWidget {
       ),
       home: HomeScreen(),
       routes: {
-        ShowDirectionScreen.route: (context) => ShowDirectionScreen(),
-        EditLocationScreen.route: (context) => EditLocationScreen(),
-        PickLocationScreen.route: (context) => PickLocationScreen(),
+        ShowDirectionScreen.routeName: (context) => ShowDirectionScreen(),
+        EditLocationScreen.routeName: (context) => EditLocationScreen(),
+        PickLocationScreen.routeName: (context) => PickLocationScreen(),
       },
     );
   }

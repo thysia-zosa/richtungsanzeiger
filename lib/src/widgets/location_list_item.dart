@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:richtungsanzeiger/src/screens/edit_location_screen.dart';
 import '../models/location.dart';
 
 class LocationListItem extends StatelessWidget {
@@ -22,7 +23,13 @@ class LocationListItem extends StatelessWidget {
           ),
         ),
         trailing: IconButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushNamed(
+              context,
+              EditLocationScreen.routeName,
+              arguments: location,
+            );
+          },
           icon: Icon(Icons.edit),
         ),
       ),

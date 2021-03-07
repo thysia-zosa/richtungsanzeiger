@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class PickLocationScreen extends StatefulWidget {
-  static String route = '/pickLocation';
+  static String routeName = '/pickLocation';
   @override
   _PickLocationScreenState createState() => _PickLocationScreenState();
 }

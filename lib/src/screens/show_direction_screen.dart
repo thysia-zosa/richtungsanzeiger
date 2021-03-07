@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ShowDirectionScreen extends StatefulWidget {
-  static String route = '/showDirection';
+  static String routeName = '/showDirection';
   @override
   _ShowDirectionScreenState createState() => _ShowDirectionScreenState();
 }
