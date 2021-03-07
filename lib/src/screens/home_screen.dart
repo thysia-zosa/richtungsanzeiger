@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:richtungsanzeiger/src/widgets/location_list.dart';
 
 class HomeScreen extends StatefulWidget {
   HomeScreen({Key key}) : super(key: key);
@@ -23,50 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       body: Padding(
         padding: const EdgeInsets.all(10.0),
-        child: ListView(
-          children: [
-            Card(
-              margin: const EdgeInsets.all(10.0),
-              color: Colors.white,
-              child: ListTile(
-                leading: IconButton(
-                  onPressed: () {},
-                  icon: Icon(Icons.explore),
-                ),
-                title: Text(
-                  'Matterhorn',
-                  style: TextStyle(
-                    fontSize: 18.0,
-                  ),
-                ),
-                trailing: IconButton(
-                  onPressed: () {},
-                  icon: Icon(Icons.edit),
-                ),
-              ),
-            ),
-            Card(
-              margin: const EdgeInsets.all(10.0),
-              color: Colors.white,
-              child: ListTile(
-                leading: IconButton(
-                  onPressed: () {},
-                  icon: Icon(Icons.explore),
-                ),
-                title: Text(
-                  'Bundeshaus',
-                  style: TextStyle(
-                    fontSize: 18.0,
-                  ),
-                ),
-                trailing: IconButton(
-                  onPressed: () {},
-                  icon: Icon(Icons.edit),
-                ),
-              ),
-            ),
-          ],
-        ),
+        child: LocationList(),
       ),
     );
   }
