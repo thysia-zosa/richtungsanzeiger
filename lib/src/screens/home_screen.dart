@@ -4,7 +4,7 @@ import 'package:richtungsanzeiger/src/screens/edit_location_screen.dart';
 import 'package:richtungsanzeiger/src/widgets/location_list.dart';
 
 class HomeScreen extends StatefulWidget {
-  HomeScreen({Key key}) : super(key: key);
+  HomeScreen({Key? key}) : super(key: key);
 
   @override
   _HomeScreenState createState() => _HomeScreenState();

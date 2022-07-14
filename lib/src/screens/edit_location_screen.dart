@@ -11,13 +11,14 @@ class EditLocationScreen extends StatefulWidget {
 
 class _EditLocationScreenState extends State<EditLocationScreen> {
   final _formKey = GlobalKey<FormState>();
-  String _name;
-  String _latitude;
-  String _longitude;
+  String _name = '';
+  String _latitude = '';
+  String _longitude = '';
 
   @override
   Widget build(BuildContext context) {
-    final Location location = ModalRoute.of(context).settings.arguments;
+    final Location location =
+        ModalRoute.of(context)?.settings.arguments as Location;
     return Scaffold(
       appBar: AppBar(
         title: Text('Ort bearbeiten'),

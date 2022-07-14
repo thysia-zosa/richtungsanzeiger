@@ -27,8 +27,9 @@ class DatabaseActions {
   Future<int> queryRowCount() async {
     final Database db = await _databaseHelper.database;
     return Sqflite.firstIntValue(
-      await db.rawQuery('select count(*) from $table'),
-    );
+          await db.rawQuery('select count(*) from $table'),
+        ) ??
+        0;
   }
 
   Future<int> update(Location location) async {

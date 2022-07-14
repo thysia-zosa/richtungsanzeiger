@@ -10,7 +10,7 @@ class Direction {
   Direction(
     this._startingLocation,
     this._targetLocation,
-  ) {
+  ) : _directionAzimuth = 0 {
     this._directionAzimuth = calculateDirectionAzimuth();
   }
 

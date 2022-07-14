@@ -1,10 +1,15 @@
 class Location {
-  final int id;
+  final int? id;
   final String name;
   final double latitude;
   final double longitude;
 
-  Location({this.id, this.name, this.latitude, this.longitude});
+  Location({
+    this.id,
+    required this.name,
+    required this.latitude,
+    required this.longitude,
+  });
 
   Map<String, dynamic> toJson() {
     Map<String, dynamic> map = {
@@ -21,6 +26,6 @@ class Location {
   Location.fromJson(Map<String, dynamic> json)
       : id = json['_id'],
         name = json['name'],
-        latitude = json['latitude'],
-        longitude = json['longitude'];
+        latitude = double.parse(json['latitude'].toString()),
+        longitude = double.parse(json['longitude'].toString());
 }
